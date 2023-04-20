@@ -1,11 +1,9 @@
-<script setup></script>
+<script setup>
+  import Navbar from "./components/Navbar.vue";
+</script>
 
 <template>
-  <h1>Dielecpro</h1>
-  <br />
-  <button class="btn btn-outline-secondary animate__animated animate__fadeInLeft">
-    Touch me
-  </button>
+  <Navbar />
 </template>
 
 <style scoped></style>
