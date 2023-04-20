@@ -1,13 +1,13 @@
 <script setup></script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm navbar-large">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
         ><span class="title-navbar navbar-brand-movil">Dielecpro</span></a
       >
       <button
-        class="navbar-toggler"
+        class="btn-navbar"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
@@ -72,6 +72,16 @@
     .navbar-brand-movil {
       display: block;
     }
+
+    .btn-navbar {
+      border: none;
+      background-color: transparent;
+    }
+
+    .navbar-toggler-icon{
+      width: 30px;
+    }
+
   }
 
   @media screen and (min-width: 768px) {
@@ -81,6 +91,10 @@
 
     .navbar-brand-movil {
       display: none;
+    }
+
+    .navbar-large {
+      height: 100px;
     }
   }
 </style>
