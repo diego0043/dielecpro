@@ -1,8 +1,25 @@
-<script setup></script>
+<script setup>
+  import { ref } from "vue";
+  const refHome = ref(null);
+  const refAbout = ref(null);
+  const refServices = ref(null);
+  const refProjects = ref(null);
+  const refContact = ref(null);
+
+  const showRef = (refBtn) => {
+    const refBtns = [refHome, refAbout, refServices, refProjects, refContact];
+    refBtns.forEach((refBtn) => {
+      if (refBtn.value.classList.contains("default-nav-link")) {
+        refBtn.value.classList.remove("default-nav-link");
+      }
+    });
+    refBtn.classList.add("default-nav-link");
+  };
+</script>
 
 <template>
   <nav
-    class="navbar navbar-expand-lg bg-white shadow-sm navbar-large navbar-position"
+    class="navbar navbar-expand-lg bg-white  navbar-large navbar-position"
   >
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
@@ -30,19 +47,58 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            <button
+              ref="refHome"
+              @click="showRef(refHome)"
+              class="default-nav-link nav-link"
+              aria-current="page"
+              href="#"
+            >
+              Inicio
+            </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nosotros</a>
+            <button
+              ref="refAbout"
+              @click="showRef(refAbout)"
+              class="nav-link"
+              href="#"
+            >
+              Sobre nosotros
+            </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Servicios</a>
+            <button
+              ref="refServices"
+              @click="showRef(refServices)"
+              class="nav-link"
+              aria-current="page"
+              href="#"
+            >
+              Servicios
+            </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Galeria</a>
+            <button
+              ref="refProjects"
+              @click="showRef(refProjects)"
+              class="nav-link"
+              aria-current="page"
+              href="#"
+            >
+              Proyectos
+            </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Contacto</a>
+            <button
+              ref="refContact"
+              @click="showRef(refContact)"
+              class="nav-link"
+              aria-current="page"
+              href="#"
+            >
+              Contacto
+            </button>
           </li>
         </ul>
       </div>
@@ -51,6 +107,7 @@
 </template>
 
 <style scoped>
+
   .items-navbar {
     display: flex;
     margin-left: auto;
@@ -92,9 +149,18 @@
     .navbar-toggler-icon {
       width: 30px;
     }
+
+    .nav-link{
+      background-color: transparent;
+      border: none;
+    }
   }
 
   @media screen and (min-width: 768px) {
+
+    .title-navbar{
+      color: var(--color-primary);
+    }
     .navbar-brand-pc {
       display: block;
     }
@@ -109,6 +175,53 @@
 
     .btn-navbar {
       display: none;
+    }
+
+    .nav-link {
+      background-color: transparent;
+      border: none;
+      position: relative;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      color: #000;
+    }
+
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover::before {
+      transform: scaleX(1);
+    }
+
+    .default-nav-link {
+      position: relative;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .default-nav-link::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-primary);
+      transform: scaleX(1);
     }
   }
 </style>
