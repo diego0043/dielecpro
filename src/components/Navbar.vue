@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm navbar-large">
+  <nav
+    class="navbar navbar-expand-lg bg-white shadow-sm navbar-large navbar-position"
+  >
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
         ><span class="title-navbar navbar-brand-movil">Dielecpro</span></a
@@ -64,6 +66,14 @@
     font-weight: 700;
   }
 
+  .navbar-position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
   @media screen and (max-width: 768px) {
     .navbar-brand-pc {
       display: none;
@@ -79,10 +89,9 @@
       background-color: transparent;
     }
 
-    .navbar-toggler-icon{
+    .navbar-toggler-icon {
       width: 30px;
     }
-
   }
 
   @media screen and (min-width: 768px) {

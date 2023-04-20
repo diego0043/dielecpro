@@ -1,5 +1,5 @@
 <template>
-  <Carousel :autoplay="4000" :wrap-around="true">
+  <Carousel class="carousel-margin" :autoplay="4000" :wrap-around="true">
     <Slide v-for="slide in images" :key="slide">
       <div class="carousel__item">
         <img class="img-carousel" :src="slide" alt="" />
@@ -37,7 +37,7 @@
 
 <style scoped>
   .carousel__item {
-    width: 100%;
+    width: 98%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -45,8 +45,12 @@
   }
 
   .img-carousel {
-    width: 100%;
+    width: 98%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .carousel-margin {
+    margin-top: 80px;
   }
 </style>
