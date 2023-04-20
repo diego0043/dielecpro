@@ -74,6 +74,7 @@
     }
 
     .btn-navbar {
+      display: block;
       border: none;
       background-color: transparent;
     }
@@ -95,6 +96,10 @@
 
     .navbar-large {
       height: 100px;
+    }
+
+    .btn-navbar {
+      display: none;
     }
   }
 </style>
