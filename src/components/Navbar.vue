@@ -43,15 +43,15 @@
         id="navbarSupportedContent"
       >
         <ul class="navbar-nav mb-2 mb-lg-0 items-navbar">
-          <li class="nav-item navbar-brand-pc">
+          <li class="nav-item navbar-brand-pc ">
             <a class="navbar-brand" href="#"
-              ><img class="img-brand" src="../assets/Vector.svg" alt="" /><span
+              ><img class="img-brand-pc" src="../assets/Vector.svg" alt="" /><span
                 class="title-navbar-pc"
                 >DIELECPRO</span
               ></a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <button
               ref="refHome"
               @click="showRef(refHome)"
@@ -181,7 +181,9 @@
       font-weight: bold;
     }
     .navbar-brand-pc {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .navbar-brand-movil {
@@ -189,6 +191,9 @@
     }
 
     .navbar-large {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       height: 100px;
     }
 
@@ -246,9 +251,9 @@
     .img-brand-pc {
       position: absolute;
       margin-left: -25px;
-      margin-top: 5px;
+      margin-top: 0px;
       width: 30px;
-      height: 30px;
+      height:30px;
     }
 
     .img-brand-movil {

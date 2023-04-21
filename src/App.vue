@@ -9,7 +9,7 @@
   <Navbar />
   <HomeImages />
   <AboutUs/>
-  <footer-container />
+  <FooterContainer />
 </template>
 
 <style scoped></style>

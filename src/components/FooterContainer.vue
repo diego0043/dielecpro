@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="col">
-        <maps-component />
+        <MapsComponent />
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@
 import MapsComponent from "./MapsComponent.vue";
 </script>
 
-<style>
+<style scoped>
   .footer-container {
     background-color: #303442;
     height: 60vh;
