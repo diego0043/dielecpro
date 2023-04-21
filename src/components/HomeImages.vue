@@ -1,18 +1,16 @@
 <template>
-  <Carousel class="carousel-margin" :autoplay="5000" :wrap-around="true">
+  <Carousel class="carousel-margin" :autoplay="5000" :wrap-around="true" :mouse-drag="false">
     <Slide v-for="slide in images" :key="slide">
       <div class="carousel__item">
         <img class="img-carousel" :src="slide" alt="" />
       </div>
     </Slide>
-
-    <template #addons> </template>
   </Carousel>
 </template>
 
 <script>
   import { defineComponent } from "vue";
-  import { Carousel, Pagination, Slide } from "vue3-carousel";
+  import { Carousel, Slide } from "vue3-carousel";
 
   import "vue3-carousel/dist/carousel.css";
 

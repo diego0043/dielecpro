@@ -18,12 +18,14 @@
 </script>
 
 <template>
-  <nav
-    class="navbar navbar-expand-lg bg-white  navbar-large navbar-position"
-  >
+  <nav class="navbar navbar-expand-lg bg-white navbar-large navbar-position">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
-        ><span class="title-navbar navbar-brand-movil">Dielecpro</span></a
+        ><img class="img-brand-movil" src="../assets/Vector.svg" alt="" /><span
+          class="title-navbar navbar-brand-movil"
+        >
+          Dielecpro</span
+        ></a
       >
       <button
         class="btn-navbar"
@@ -43,7 +45,10 @@
         <ul class="navbar-nav mb-2 mb-lg-0 items-navbar">
           <li class="nav-item navbar-brand-pc">
             <a class="navbar-brand" href="#"
-              ><span class="title-navbar">Dielecpro</span></a
+              ><img class="img-brand" src="../assets/Vector.svg" alt="" /><span
+                class="title-navbar-pc"
+                >DIELECPRO</span
+              ></a
             >
           </li>
           <li class="nav-item">
@@ -107,7 +112,6 @@
 </template>
 
 <style scoped>
-
   .items-navbar {
     display: flex;
     margin-left: auto;
@@ -116,11 +120,6 @@
 
   .nav-item {
     margin: 0 15px;
-  }
-
-  .title-navbar {
-    font-size: 1.5rem;
-    font-weight: 700;
   }
 
   .navbar-position {
@@ -132,12 +131,18 @@
   }
 
   @media screen and (max-width: 768px) {
+    .title-navbar {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
     .navbar-brand-pc {
       display: none;
     }
 
     .navbar-brand-movil {
       display: block;
+      margin-left: 20px;
     }
 
     .btn-navbar {
@@ -150,16 +155,30 @@
       width: 30px;
     }
 
-    .nav-link{
+    .nav-link {
       background-color: transparent;
       border: none;
+    }
+
+    .img-brand-pc {
+      display: none;
+    }
+
+    .img-brand-movil {
+      position: absolute;
+      margin-left: -5px;
+      margin-top: 8px;
+      width: 25px;
+      height: 25px;
     }
   }
 
   @media screen and (min-width: 768px) {
-
-    .title-navbar{
+    .title-navbar {
       color: var(--color-primary);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
     .navbar-brand-pc {
       display: block;
@@ -222,6 +241,18 @@
       left: 0;
       background-color: var(--color-primary);
       transform: scaleX(1);
+    }
+
+    .img-brand-pc {
+      position: absolute;
+      margin-left: -25px;
+      margin-top: 5px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .img-brand-movil {
+      display: none;
     }
   }
 </style>
