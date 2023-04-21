@@ -1,20 +1,21 @@
 <template>
   <div class="footer-container container-fluid">
     <div class="row">
-      <div class="col">
-        <div class="row mt-5">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 row-principal">
+        <div class="row row-container-footer">
           <div class="col">
-            <img src="../assets/Vector.svg" alt="" /> <span>DIELECPRO</span>
+            <img class="logo-footer" src="../assets/Vector.svg" alt="" />
+            <span>DIELECPRO</span>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-container-footer">
           <div class="col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
-              class="bi bi-geo-alt-fill"
+              class="span-icon"
               viewBox="0 0 16 16"
             >
               <path
@@ -24,14 +25,14 @@
             <span> 8494 Signal Hill Road Manassas, VA, 20110 </span>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-container-footer">
           <div class="col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
-              class="bi bi-clock"
+              class="span-icon"
               viewBox="0 0 16 16"
             >
               <path
@@ -44,14 +45,14 @@
             <span> Mon-Fri 08:00 AM - 05:00 PM </span>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-container-footer">
           <div class="col">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
-              class="bi bi-telephone-fill"
+              class="span-icon"
               viewBox="0 0 16 16"
             >
               <path
@@ -63,30 +64,92 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="col mt-5">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-container">
+        <div class="col">
           <span>
-            Our experienced electricians are highly trained in all aspects of
-            electrical service, from office lighting and security systems to
-            emergency repair.
+            Nuestros electricistas experimentados están altamente capacitados en
+            todos los aspectos del servicio eléctrico, desde sistemas de
+            iluminación y seguridad para oficinas hasta reparaciones de
+            emergencia. Nos aseguramos de mantener a nuestro personal
+            actualizado con las últimas tendencias y avances en tecnología
+            eléctrica, lo que garantiza que estén preparados para abordar
+            cualquier desafío eléctrico con eficiencia y profesionalismo. Puede
+            confiar en nosotros para brindarle soluciones personalizadas y de
+            alta calidad para sus necesidades eléctricas.
           </span>
         </div>
       </div>
+      <div class="col col-container">
+        <div class="container-img">
+          <MapsComponent />
+        </div>
+      </div>
+    </div>
+    <div class="row row-finaly">
       <div class="col">
-        <MapsComponent />
+        <span class=""
+          >© {{ year }} Electrical Services. All Rights Reserved.</span
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import MapsComponent from "./MapsComponent.vue";
+  import MapsComponent from "./MapsComponent.vue";
+  const fecha = new Date();
+  const year = fecha.getFullYear();
 </script>
 
 <style scoped>
   .footer-container {
     background-color: #303442;
-    height: 60vh;
+    padding: 20px;
     color: white;
+  }
+
+  .container-img {
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+  }
+
+  .col-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* establecemos la dirección principal en fila */
+    background-color: #303442;
+    margin-top: 0px;
+  }
+
+  .row-principal {
+    margin-top: 5%;
+  }
+  .row-container-footer {
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .row-finaly {
+    background-color: #303442;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center; /* establecemos la dirección principal en fila */
+    height: 6vh;
+  }
+
+  .logo-footer {
+    width: 20px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .span-icon {
+    margin-right: 10px;
   }
 </style>

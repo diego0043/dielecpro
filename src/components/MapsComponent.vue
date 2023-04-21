@@ -1,15 +1,17 @@
 <template>
-  <img class="img-map" src="https://www.google.com/maps/d/thumbnail?mid=1Qhv0NwTq7ybxNJj0xy2rGwf1ku0&hl=en_US" alt="">
+  <img
+    class="img-map"
+    src="https://www.google.com/maps/d/thumbnail?mid=1Qhv0NwTq7ybxNJj0xy2rGwf1ku0&hl=en_US"
+    alt=""
+  />
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style scoped>
-    .img-map {
-        width: 80%;
-        height: 80%;
-        margin-top: 30px;
-    }
+  .img-map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 </style>
