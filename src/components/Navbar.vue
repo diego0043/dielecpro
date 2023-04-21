@@ -21,7 +21,7 @@
   <nav class="navbar navbar-expand-lg bg-white navbar-large navbar-position">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
-        ><img class="img-brand-movil" src="../assets/Vector.svg" alt="" /><span
+        ><img class="img-brand-movil" src="../assets/Vector.png" alt="" /><span
           class="title-navbar navbar-brand-movil"
         >
           Dielecpro</span
@@ -45,7 +45,7 @@
         <ul class="navbar-nav mb-2 mb-lg-0 items-navbar">
           <li class="nav-item navbar-brand-pc ">
             <a class="navbar-brand" href="#"
-              ><img class="img-brand-pc" src="../assets/Vector.svg" alt="" /><span
+              ><img class="img-brand-pc" src="../assets/Vector.png" alt="" /><span
                 class="title-navbar-pc"
                 >DIELECPRO</span
               ></a
@@ -142,7 +142,7 @@
 
     .navbar-brand-movil {
       display: block;
-      margin-left: 20px;
+      margin-left: 40px;
     }
 
     .btn-navbar {
@@ -167,8 +167,8 @@
     .img-brand-movil {
       position: absolute;
       margin-left: -5px;
-      margin-top: 8px;
-      width: 25px;
+      margin-top: 7px;
+      width: 40px;
       height: 25px;
     }
   }
@@ -249,10 +249,10 @@
 
     .img-brand-pc {
       position: absolute;
-      margin-left: -25px;
-      margin-top: 0px;
-      width: 30px;
-      height:30px;
+      margin-left: -80px;
+      margin-top: -14px;
+      width: 80px;
+      height:50px;
     }
 
     .img-brand-movil {
