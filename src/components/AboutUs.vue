@@ -1,6 +1,6 @@
 <template>
 <div class="container pt-2">
-	<div class="row pt-5">
+	<div class="row pt-5 pb-5">
 		<div class="col-sm-7 col-md-5">
 			<img id="uno" src="https://media.istockphoto.com/id/1268557129/es/foto/electricistas-cableado-de-una-nueva-construcci%C3%B3n.jpg?s=612x612&w=0&k=20&c=oSTD7KqJ_rccB7nPvJUQhxkoVpSa4SVJknGwyYrsNDE=" alt="...">
 			<img id="dos" src="https://img.freepik.com/fotos-premium/electricistas-trabajan-conectar-cables-electricos-sistema-tablero-distribucion-sistema-electrico-gabinete-control_545582-66.jpg?w=740" alt="">
