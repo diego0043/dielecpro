@@ -174,8 +174,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    .title-navbar {
-      color: var(--color-primary);
+    .title-navbar-pc {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-size: 1.5rem;
       font-weight: bold;
