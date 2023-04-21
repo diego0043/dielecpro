@@ -1,5 +1,10 @@
 <template>
-  <Carousel class="carousel-margin" :autoplay="5000" :wrap-around="true" :mouse-drag="false">
+  <Carousel
+    class="carousel-margin"
+    :autoplay="5000"
+    :wrap-around="true"
+    :mouse-drag="false"
+  >
     <Slide v-for="slide in images" :key="slide">
       <div class="carousel__item">
         <img class="img-carousel" :src="slide" alt="" />
