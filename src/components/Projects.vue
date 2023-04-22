@@ -1,5 +1,5 @@
 <template>
-    <div class="bg container mb-5 text-center">
+    <div class="bg container mb-5 text-center pt-5">
 
         <div class="row">
             <h1>Nuestro Proyectos</h1>

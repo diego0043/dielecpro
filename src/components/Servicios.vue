@@ -67,11 +67,15 @@
 			</div>
 		</div>
 	</div>
-	
 </div>
+
 </template>
 
 <style>
+body{
+	overflow-x: hidden;
+}
+
 .servicios {
     overflow: hidden;
     position: relative;
@@ -179,14 +183,14 @@
     }
 }
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .servicios {
         margin-left: -52px;
         margin-right: -52px;
     }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 768px) {
     .servicios {
         margin-left: 0;
         margin-right: 0;
@@ -275,7 +279,7 @@
     z-index: 1;
     top: 0;
     left: 5% 0;
-    width: 85%;
+    width: 90%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -322,7 +326,6 @@
 
 .item:hover .item-bg:before {
     left: 100%;
-    -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 
@@ -338,7 +341,6 @@
 .item.open-info .item-titulo .icono {
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin-top: -25px;
 }
@@ -347,9 +349,13 @@
     .item {
         height: 600px;
     }
-    .item .item-titulo {
+    .item .item-tit,ulo {
         font-size: 33px;
     }
+	.item .item-contenido:nth-child(1){
+		padding-left: 0%;
+		padding-right: 0%;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -360,7 +366,7 @@
         height: 411px;
     }
     .item .item-titulo {
-        font-size: 24px;
+        font-size: 18px;
     }
     .item .item-titulo .icono {
         top: -53px;
@@ -368,9 +374,11 @@
     .item .item-titulo .icono img {
         max-width: 46px;
     }
-    .item .item-contenido {
-        padding-left: 15px;
-        padding-right: 15px;
+    .item .item-contenido{
+		padding-left: 15px;
+		padding-right: 45px;
+		
+        
     }
     .item .item-bg .item-bg-top:before,
     .item .item-bg .item-bg-top:after {
@@ -378,7 +386,7 @@
     }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 768px) {
     .item {
         height: 411px;
     }
@@ -386,7 +394,8 @@
         height: 411px;
     }
     .item .item-titulo {
-        font-size: 24px;
+        font-size: 20px;
+		font-weight: 900;
     }
     .item .item-titulo .icono {
         top: -53px;
@@ -395,7 +404,7 @@
         max-width: 46px;
     }
     .item .item-bg {
-        -webkit-transform: skew(0deg, 0);
+        -webkit-transform: skew(12deg, 0);
         transform: skew(0deg, 0);
     }
     .item .item-bg .item-bg-img {
@@ -406,6 +415,7 @@
     .item .item-contenido {
         padding-left: 15px;
         padding-right: 15px;
+		left: 7%;   
     }
     .item .item-bg {
         -webkit-transform: skew(0deg, 0);
