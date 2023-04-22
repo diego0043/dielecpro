@@ -4,7 +4,7 @@
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 row-principal">
         <div class="row row-container-footer">
           <div class="col">
-            <img class="logo-footer" src="../assets/Vector.png" alt="" />
+            <img class="logo-footer" src="../assets/Vector.svg" alt="" />
             <span>DIELECPRO</span>
           </div>
         </div>
@@ -144,8 +144,7 @@
   }
 
   .logo-footer {
-    width: 20px;
-    height: 30px;
+    width: 80px;
     margin-right: 10px;
   }
 

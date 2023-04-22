@@ -21,7 +21,7 @@
   <nav class="navbar navbar-expand-lg bg-white navbar-large navbar-position">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
-        ><img class="img-brand-movil" src="../assets/Vector.png" alt="" /><span
+        ><img class="img-brand-movil" src="../assets/Vector.svg" alt="" /><span
           class="title-navbar navbar-brand-movil"
         >
           Dielecpro</span
@@ -45,7 +45,7 @@
         <ul class="navbar-nav mb-2 mb-lg-0 items-navbar">
           <li class="nav-item navbar-brand-pc ">
             <a class="navbar-brand" href="#"
-              ><img class="img-brand-pc" src="../assets/Vector.png" alt="" /><span
+              ><img class="img-brand-pc" src="../assets/Vector.svg" alt="" /><span
                 class="title-navbar-pc"
                 >DIELECPRO</span
               ></a
@@ -135,14 +135,17 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-size: 1.5rem;
       font-weight: bold;
+      margin-top: 7px;
     }
     .navbar-brand-pc {
       display: none;
     }
 
     .navbar-brand-movil {
-      display: block;
-      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
     }
 
     .btn-navbar {
@@ -168,8 +171,7 @@
       position: absolute;
       margin-left: -5px;
       margin-top: 7px;
-      width: 40px;
-      height: 25px;
+      width: 50px;
     }
   }
 
@@ -249,10 +251,9 @@
 
     .img-brand-pc {
       position: absolute;
-      margin-left: -80px;
-      margin-top: -14px;
-      width: 80px;
-      height:50px;
+      margin-left: -90px;
+      margin-top: -22px;
+      width: 90px;
     }
 
     .img-brand-movil {
