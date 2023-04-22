@@ -52,58 +52,58 @@
             >
           </li>
           <li class="nav-item ">
-            <button
+            <a
               ref="refHome"
               @click="showRef(refHome)"
               class="default-nav-link nav-link"
               aria-current="page"
-              href="#"
+              href="#home"
             >
               Inicio
-            </button>
+          </a>
           </li>
           <li class="nav-item">
-            <button
+            <a
               ref="refAbout"
               @click="showRef(refAbout)"
               class="nav-link"
-              href="#"
+              href="#about"
             >
               Sobre nosotros
-            </button>
+            </a>
           </li>
           <li class="nav-item">
-            <button
+            <a
               ref="refServices"
               @click="showRef(refServices)"
               class="nav-link"
               aria-current="page"
-              href="#"
+              href="#services"
             >
               Servicios
-            </button>
+            </a>
           </li>
           <li class="nav-item">
-            <button
+            <a
               ref="refProjects"
               @click="showRef(refProjects)"
               class="nav-link"
               aria-current="page"
-              href="#"
+              href="#projects"
             >
               Proyectos
-            </button>
+            </a>
           </li>
           <li class="nav-item">
-            <button
+            <a
               ref="refContact"
               @click="showRef(refContact)"
               class="nav-link"
               aria-current="page"
-              href="#"
+              href="#contact"
             >
               Contacto
-            </button>
+            </a>
           </li>
         </ul>
       </div>

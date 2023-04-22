@@ -67,15 +67,11 @@
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-container">
         <div class="col">
           <span>
-            Nuestros electricistas experimentados están altamente capacitados en
-            todos los aspectos del servicio eléctrico, desde sistemas de
-            iluminación y seguridad para oficinas hasta reparaciones de
-            emergencia. Nos aseguramos de mantener a nuestro personal
-            actualizado con las últimas tendencias y avances en tecnología
-            eléctrica, lo que garantiza que estén preparados para abordar
-            cualquier desafío eléctrico con eficiencia y profesionalismo. Puede
-            confiar en nosotros para brindarle soluciones personalizadas y de
-            alta calidad para sus necesidades eléctricas.
+            Nuestros electricistas son expertos en servicios eléctricos, desde
+            iluminación y seguridad hasta reparaciones de emergencia. Nos
+            mantenemos actualizados con las últimas tendencias y avances en
+            tecnología eléctrica para brindar soluciones personalizadas y de
+            alta calidad a nuestros clientes.
           </span>
         </div>
       </div>

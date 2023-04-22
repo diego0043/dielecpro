@@ -1,14 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-:root{
-    --text-primary: #393a43;
-    --color-primary: #2d3d8a;
-    --color-secondary: #5c70d6;
-    --color-helper: #e8ecf8;
-}
- 
-
-body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+:root {
+  --text-primary: #393a43;
+  --color-primary: #2d3d8a;
+  --color-secondary: #5c70d6;
+  --color-helper: #e8ecf8;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: auto; /* grosor de la barra */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color de fondo de la barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cac4c4; /* color del thumb */
+}

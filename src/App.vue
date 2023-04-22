@@ -10,12 +10,12 @@
 
 <template>
   <Navbar />
-  <HomeImages />
+  <HomeImages id="home" />
   <SocialNetwork />
-  <AboutUs/>
-  <Services/>
-  <Projects />
-  <FooterContainer />
+  <AboutUs id="about" />
+  <Services id="services" />
+  <Projects id="projects" />
+  <FooterContainer id="contact" />
 </template>
 
 <style scoped></style>
