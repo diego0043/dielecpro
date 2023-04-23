@@ -83,8 +83,8 @@
   position: relative;
   cursor: pointer;
   transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
-  overflow: hidden;
+/*   box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+ */  overflow: hidden;
   color: var(--color-helper);
 }
 .tile img {
@@ -127,7 +127,7 @@
 }
 .tile:hover {
   /*   background-color:#99aeff; */
-  box-shadow: 0px 35px 60px -17px var(--text-primary);
+  box-shadow: 0px 25px 35px -25px var(--text-primary);
   transform: scale(1.05);
 }
 .tile:hover img {

@@ -3,11 +3,24 @@
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 row-principal">
         <div class="row row-container-footer">
-          <div class="col">
+          <div class="col img-and-title">
             <img class="logo-footer" src="../assets/Vector.svg" alt="" />
-            <span>DIELECPRO</span>
+            <span class="title-empresa">DIELECPRO</span>
           </div>
         </div>
+        <div class="row">
+          <div class="col d-flex">
+            <span class="text-footer">
+              Nuestros personal son expertos en servicios eléctricos, desde
+              iluminación y seguridad hasta reparaciones de emergencia. Nos
+              mantenemos actualizados con las últimas tendencias y avances en
+              tecnología eléctrica para brindar soluciones personalizadas y de
+              alta calidad a nuestros clientes.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-container">
         <div class="row row-container-footer">
           <div class="col">
             <svg
@@ -64,17 +77,6 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-container">
-        <div class="col">
-          <span>
-            Nuestros electricistas son expertos en servicios eléctricos, desde
-            iluminación y seguridad hasta reparaciones de emergencia. Nos
-            mantenemos actualizados con las últimas tendencias y avances en
-            tecnología eléctrica para brindar soluciones personalizadas y de
-            alta calidad a nuestros clientes.
-          </span>
-        </div>
-      </div>
       <div class="col col-container">
         <div class="container-img">
           <MapsComponent />
@@ -99,9 +101,28 @@
 
 <style scoped>
   .footer-container {
-    background-color: #303442;
+    background-color: #dfdfdf;
     padding: 20px;
-    color: white;
+    color: black;
+  }
+
+  .img-and-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* establecemos la dirección principal en fila */
+    margin-top: -20px;
+  }
+
+  .title-empresa {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 6px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .text-footer {
+    text-align: justify;
   }
 
   .container-img {
@@ -115,7 +136,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row; /* establecemos la dirección principal en fila */
-    background-color: #303442;
+    background-color: #dfdfdf;
     margin-top: 0px;
   }
 
@@ -130,7 +151,7 @@
   }
 
   .row-finaly {
-    background-color: #303442;
+    background-color: #dfdfdf;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +162,7 @@
 
   .logo-footer {
     width: 80px;
-    margin-right: 10px;
+    margin-right: 0px;
   }
 
   .span-icon {
