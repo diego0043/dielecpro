@@ -4,7 +4,7 @@
     rel="stylesheet"
   />
   <div class="floating-container">
-    <div class="floating-button" @click="toggleMenu">
+    <div class="floating-button" @click="toggleMenu" @focusout="showMenu = false" tabindex="0">
       <i class="fa fa-globe"></i>
     </div>
     <div class="element-container" v-if="showMenu">
@@ -52,34 +52,6 @@ export default defineComponent({
 
 <style scoped>
 @media screen and (max-width: 768px) {
-  .instagram {
-    background: #f09433;
-    background: -moz-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  }
 
   @-webkit-keyframes come-in {
     0% {
