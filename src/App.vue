@@ -5,12 +5,14 @@
   import Services from "./components/Servicios.vue";
   import FooterContainer from "./components/FooterContainer.vue";
   import SocialNetwork from "./components/SocialNetwork.vue";
+  import SocialNetworkMovil from "./components/SocialNetworkMovil.vue";
   import Projects from "./components/Projects.vue";
 </script>
 
 <template>
   <Navbar />
   <HomeImages id="home" />
+  <SocialNetworkMovil />
   <SocialNetwork />
   <AboutUs id="about" />
   <Services id="services" />
