@@ -3,30 +3,42 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
   />
-  <div class="floating-container">
-    <div class="floating-button" @click="toggleMenu" @focusout="showMenu = false" tabindex="0">
+  <div class="floating-container" @mouseleave="hideMenu">
+    <div
+      class="floating-button"
+      @click="toggleMenu"
+      @keydown.enter.space="toggleMenu"
+      :tabindex="isMenuVisible ? '0' : ''"
+      :aria-expanded="isMenuVisible"
+    >
       <i class="fa fa-globe"></i>
     </div>
-    <div class="element-container" v-if="showMenu">
-
+    <div
+      class="element-container"
+      v-show="isMenuVisible"
+      @keydown.escape="hideMenu"
+      :aria-hidden="!isMenuVisible"
+    >
       <a
         href="https://www.instagram.com/dielecpro/"
         class="instagram"
         target="_blank"
+        @keydown.enter="hideMenu"
       >
         <span class="float-element tooltip-left">
           <i class="icon fa fa-instagram"></i>
         </span>
       </a>
 
-
-      <a href="https://api.whatsapp.com/send?phone=50379232974" target="_blank">
+      <a
+        href="https://api.whatsapp.com/send?phone=50379232974"
+        target="_blank"
+        @keydown.enter="hideMenu"
+      >
         <span class="float-element tooltip-left">
           <i class="icon fa fa-whatsapp"></i>
         </span>
       </a>
-
-
     </div>
   </div>
 </template>
@@ -36,15 +48,30 @@ import { defineComponent, ref } from "vue";
 export default defineComponent({
   name: "FloatingMenu",
   setup() {
-    const showMenu = ref(false);
+    const isMenuVisible = ref(false);
+    const buttonRef = ref(null);
 
     function toggleMenu() {
-      showMenu.value = !showMenu.value;
+      isMenuVisible.value = !isMenuVisible.value;
+      if (isMenuVisible.value) {
+        setTimeout(() => {
+          buttonRef.value.focus();
+        }, 0);
+      }
+    }
+
+    function hideMenu() {
+      if (isMenuVisible.value) {
+        isMenuVisible.value = false;
+        buttonRef.value.focus();
+      }
     }
 
     return {
-      showMenu,
+      isMenuVisible,
       toggleMenu,
+      buttonRef,
+      hideMenu,
     };
   },
 });
