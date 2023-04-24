@@ -1,6 +1,6 @@
 <template>
   <img
-    class="img-map"
+    class="img-map shadow-lg"
     src="https://www.google.com/maps/d/thumbnail?mid=1Qhv0NwTq7ybxNJj0xy2rGwf1ku0&hl=en_US"
     alt=""
   />

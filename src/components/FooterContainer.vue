@@ -2,7 +2,7 @@
   <div class="footer-container container-fluid">
     <div class="row">
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 row-principal">
-        <div class="row row-container-footer">
+        <div class="row row-container-footer mb-3">
           <div class="col img-and-title">
             <img class="logo-footer" src="../assets/Vector.svg" alt="" />
             <span class="title-empresa">DIELECPRO</span>
@@ -20,7 +20,9 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-container margin-center">
+      <div
+        class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-container margin-center"
+      >
         <div class="row row-container-footer">
           <div class="col">
             <svg
@@ -35,7 +37,7 @@
                 d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
               />
             </svg>
-            <span>Santa Ana, 25 AV sur </span>
+            <span class="text-footer-row">Santa Ana, 25 AV sur </span>
           </div>
         </div>
         <div class="row row-container-footer">
@@ -55,7 +57,7 @@
                 d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
               />
             </svg>
-            <span> Lunes - Sabado 08:00 AM - 05:00 PM </span>
+            <span class="text-footer-row"> Lunes - Sabado 08:00 AM - 05:00 PM </span>
           </div>
         </div>
         <div class="row row-container-footer">
@@ -73,8 +75,11 @@
                 d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
               />
             </svg>
-            <span> +503 7923 2974 </span>
+            <span class="text-footer-row"> +503 7923 2974 </span>
           </div>
+        </div>
+        <div class="row">
+          <ContactComponent />
         </div>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -96,6 +101,7 @@
 </template>
 
 <script setup>
+  import ContactComponent from "./ContactComponent.vue";
   import MapsComponent from "./MapsComponent.vue";
   const fecha = new Date();
   const year = fecha.getFullYear();
@@ -121,6 +127,19 @@
       display: flex;
       margin: 10px;
       width: 100%;
+      margin-top: 20px;
+    }
+
+    .span-icon {
+      margin-left: 10px;
+    }
+
+    .text-footer-row{
+      margin-left: 15px;
+    }
+
+    .row-finaly{
+      margin-top: 20px;
     }
   }
 
@@ -149,21 +168,20 @@
       margin-top: 20px;
     }
 
-    .margin-center{
+    .margin-center {
       display: block;
       margin-left: auto;
-      margin-top: 6%;
+      margin-top: 3%;
     }
 
     .span-icon {
-    margin-right: 10px;
-    margin-left: 35px;
-  }
+      margin-right: 10px;
+      margin-left: 35px;
+    }
 
-  .row-principal {
-    margin-top: 2%;
-  }
-    
+    .row-principal {
+      margin-top: 2%;
+    }
   }
   .footer-container {
     background-color: #dfdfdf;
@@ -200,5 +218,4 @@
     width: 80px;
     margin-right: 0px;
   }
-
 </style>
