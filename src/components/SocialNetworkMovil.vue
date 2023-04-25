@@ -168,7 +168,7 @@ export default defineComponent({
     text-align: center;
     font-size: 30px;
     z-index: 100;
-    box-shadow: 0 10px 25px -5px rgba(217, 255, 0, 0.41);
+    box-shadow: 0 10px 25px -5px rgba(60, 60, 59, 0.41);
     cursor: pointer;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -198,4 +198,9 @@ export default defineComponent({
     box-shadow: 0 20px 20px -10px var(--text-primary);
   }
 }
+@media screen and (min-width: 768px) {
+    .floating-container {
+      display: none;
+    }
+  }
 </style>
