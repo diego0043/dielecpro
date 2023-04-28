@@ -62,12 +62,112 @@
 		</div>
 	</div>
 </div>
+
+<div class="founder-container contenedor">
+	<div class="founder-content">
+		<h1>Fundador</h1>
+		<div class="carta">
+			<img src="https://miro.medium.com/v2/resize:fit:735/1*d_BUs7AyKgRPrICwQGReDA.jpeg" alt="">
+			<div class="intro">
+				<h3>Papá de Navas</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat distinctio dolorum animi adipisci magni nisi eveniet numquam iusto quo quod odio consectetur debitis officia ducimus ipsa quas, ipsum nam maxime.</p>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="founder-content">
+		<h1>Fundador</h1>
+		<div class="carta">
+			<img src="https://miro.medium.com/v2/resize:fit:735/1*d_BUs7AyKgRPrICwQGReDA.jpeg" alt="">
+			<div class="intro">
+				<h3>Papá de Navas</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat distinctio dolorum animi adipisci magni nisi eveniet numquam iusto quo quod odio consectetur debitis officia ducimus ipsa quas, ipsum nam maxime.</p>
+			</div>
+		</div>
+	</div> -->
+</div>
 </template>
 
 <script>
 </script>
 
 <style>
+
+/* Founder styles */
+
+.contenedor {
+	margin: 0 70px;
+}
+
+.founder-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.founder-content h1 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.carta {
+	box-shadow: 5px 5px 20px #000;
+	overflow: hidden;
+	height: 500px;
+	margin: 15px;
+	position: relative;
+}
+
+.carta img {
+	width: 100%;
+	border-radius: 3px;
+	height: 500px;
+	object-fit: cover;
+}
+
+.carta:hover {
+	cursor: pointer;
+}
+
+.carta:hover img{
+    transform: scale(1.1) rotate(-3deg);
+	transition: .5s ease-out;
+}
+
+.carta:hover .intro {
+	background-color: #000;
+	bottom: 0;
+}
+
+.carta:hover p {
+	visibility: visible;
+	opacity: 1;
+}
+
+.intro {
+	/* height: 200px; */
+	width: 100%;
+	padding: 6px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: -185px;
+	color: #fff;
+	background: rgb(27, 27, 27, .5);
+	transition: .5s;
+}
+
+.intro h3 {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+.intro p {
+	margin: 20px;
+	font-size: 20px;
+	visibility: hidden;
+	opacity: 0;
+
+}
 
 /* Sobre nosotros*/
 #uno{
@@ -117,6 +217,10 @@
 	#dos{
 		bottom: 14%;
 	}
+
+	.intro {
+		bottom: -270px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -137,6 +241,14 @@
 	#dos{
 		width: 50%;
 		left: 0%;
+	}
+
+	.founder-container {
+		grid-template-columns: 1fr;
+	}
+
+	.contenedor {
+		margin: 0 10px;
 	}
 }
 
