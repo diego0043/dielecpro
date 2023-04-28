@@ -94,6 +94,7 @@
 	display: grid;
 	height: 100%;
 	grid-template-columns: repeat(2, 1fr);
+	padding-bottom: 1.5rem;
 }
 
 .founder-container h1 {
