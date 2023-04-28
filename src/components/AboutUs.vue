@@ -74,17 +74,9 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="founder-content">
-		<h1>Fundador</h1>
-		<div class="carta">
-			<img src="https://miro.medium.com/v2/resize:fit:735/1*d_BUs7AyKgRPrICwQGReDA.jpeg" alt="">
-			<div class="intro">
-				<h3>Papá de Navas</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat distinctio dolorum animi adipisci magni nisi eveniet numquam iusto quo quod odio consectetur debitis officia ducimus ipsa quas, ipsum nam maxime.</p>
-			</div>
-		</div>
-	</div> -->
+
 </div>
+
 </template>
 
 <script>
@@ -100,10 +92,11 @@
 
 .founder-container {
 	display: grid;
+	height: 100%;
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.founder-content h1 {
+.founder-container h1 {
 	text-align: center;
 	font-weight: bold;
 }
@@ -166,6 +159,9 @@
 	font-size: 20px;
 	visibility: hidden;
 	opacity: 0;
+}
+
+.galery-content {
 
 }
 
