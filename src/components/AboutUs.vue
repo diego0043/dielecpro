@@ -365,12 +365,20 @@
 		display: none;
 	}
 	.mision1 {
-		width: 85%;
-		left: 10%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
 	}
 	.vision1 {
-		width: 85%;
-		left: 10%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.mision1-desciption{
+		text-align: left;
 	}
 }
 </style>
