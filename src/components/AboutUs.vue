@@ -8,22 +8,23 @@
 		<div class="col-sm-12 col-md-7">
 			<div class="about">
 				<h6>Sobre nosotros</h6>
-				<h4>Excelentes servicios residenciales y comerciales</h4>
-				<p>Todos nuestros servicios están respaldados por nuestra garantía de satisfacción del 100%. Nuestros electricistas pueden instalar cualquier cosa, desde nueva iluminación de seguridad para su exterior hasta un generador para toda la casa que mantendrá sus electrodomésticos funcionando durante un corte de energía. </p>
+				<h4>¡Somos la empresa de referencia en el mercado! con más de una década de experiencia</h4>
+				<p>Nos hemos consolidado como líderes indiscutibles en la ejecución exitosa de proyectos de media y baja tensión, así como en el sector industrial y comercial en todo el territorio nacional, ponemos a su disposicion: </p>
 				<ul>
 					<li>
-						Disposición eléctrica de servicio completo, diseño 
+						Equipo de expertos altamente calificados con una gran capacidad para abordar proyectos de cualquier envergadura.
 					</li>
 					<li>
-						Cableado e instalación/actualizaciones 
+						Una amplia cartera de proyectos exitosos, hemos obtenido la confianza y lealtad de nuestros clientes.
 					</li>
 					<li>
-						Soluciones de energía de emergencia (generadores) 
+						Soluciones innovadoras y eficientes para nuestros clientes, siempre a la vanguardia con la tecnología.
 					</li>
 					<li>
-						Prácticamente cualquier necesidad eléctrica que tenga, ¡solo pregunte! 
+						Nuestro compromiso a superar tus expectativas en cada proyecto que llevamos a cabo, y sobre todo la capacidad para entregar resultados sobresalientes.
 					</li>
 				</ul>
+				<h5>¡Confía en nosotros para llevar tu idea al siguiente nivel!</h5>
 			</div>
 		</div>
 	</div>
@@ -185,14 +186,16 @@
 	position: relative;
 	background: #fff;
 	font-family: 'Poppins'pb-2, sans-serif;
+	text-align: justify;
 }
 
 .about h6{
 	color: var(--color-primary);
 	font-weight: 700;
+	font-size: 18px;
 }
 
-.about h4{
+.about h4,h5{
 	color: var(--text-primary);
 	font-weight: 900;
 }
