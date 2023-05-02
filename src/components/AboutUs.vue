@@ -75,12 +75,21 @@
 			</div>
 		</div>
 	</div>
+  <Accordion />
 
 </div>
 
 </template>
 
-<script>
+<script setup>
+
+import { defineComponent } from 'vue';
+import Accordion from "./Accordion.vue"
+// export default defineComponent({
+//   components: { Accordion }
+
+// })
+
 </script>
 
 <style>
