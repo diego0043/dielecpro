@@ -43,7 +43,7 @@
 <!--Contenedor de secciones de Mision y Vision para vista movil y tableta grande-->
 <div class="misionvision-uno">
 		<!--Fila con margin top,bottom y padding bottom de 5-->
-		<div class="row mt-5 pb-5 mb-5">
+		<div class="row mt-5 pb-5 mb-5" data-aos="zoom-out-right" data-aos-duration="1500">
 			<!--Div de mision con background-->
 			<div class="mision1-bg">
 				<!--Descripcion de la mision-->			
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 		<!--Fila con margin top, top y padding bottom de 5-->
-		<div class="row mt-5 pb-5 mb-5">
+		<div class="row mt-5 pb-5 mb-5" data-aos="zoom-out-left" data-aos-duration="1800">
 			<!--Div de vision con background-->
 			<div class="vision1-bg">
 				<!--Descripcion de la vision-->
