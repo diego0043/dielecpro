@@ -83,12 +83,7 @@
 
 <script setup>
 
-import { defineComponent } from 'vue';
 import Accordion from "./Accordion.vue"
-// export default defineComponent({
-//   components: { Accordion }
-
-// })
 
 </script>
 
@@ -102,7 +97,6 @@ import Accordion from "./Accordion.vue"
 
 .founder-container {
 	display: grid;
-	height: 100%;
 	grid-template-columns: repeat(2, 1fr);
 	padding-bottom: 1.5rem;
 }
