@@ -1,6 +1,6 @@
 <template>
 <!--Contenedor principal con paddind top de 2-->
-<div data-aos="fade-up" data-aos-duration="1800" class="container pt-2">
+<div data-aos="zoom-out-up" data-aos-duration="2000" data-aos-offset="300"  class="container pt-2">
 	<!--Fila con padding top de 5 y bottom de 4-->
 	<div class="row pt-5 pb-4">
 		<!--Columna de 7 de ancho en pantallas pequeñas y 5 en medianas -->

@@ -1,5 +1,5 @@
 <template>
-<div class="servicios">
+<div class="servicios" data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="1500">
 	<div class="item">
 		<div class="item-bg">
 			<div class="item-bg-img" style="background-image: url(&quot;https://www.virgoingenieros.com/wp-content/uploads/2021/09/LINEAS-AEREAS-DE-BAJA-Y-MEDIA-TENSION-2.jpg&quot;);">
