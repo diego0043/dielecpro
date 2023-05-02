@@ -288,7 +288,7 @@ function toggleAccordion(panelToActivate) {
 </script>
     
 <style scoped>
-/* *,
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -303,7 +303,7 @@ body {
     font-family: system-ui;
     font-size: 1.125rem;
     line-height: 1.6;
-} */
+}
 
 img {
     max-width: 100%;
@@ -311,7 +311,8 @@ img {
 }
 
 .wrapper {
-    max-width: 40rem;
+    max-width: 50rem;
+    width: 100%;
     margin-inline: auto;
     padding-inline: 1rem;
     color: #fff;
@@ -337,6 +338,10 @@ img {
     .accordion {
         flex-direction: row;
         height: 30rem;
+    }
+
+    .wrapper {
+        max-width: 40rem;
     }
 }
 

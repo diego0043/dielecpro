@@ -97,7 +97,7 @@ import Accordion from "./Accordion.vue"
 
 .founder-container {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr 1fr;
 	padding-bottom: 1.5rem;
 }
 
@@ -166,10 +166,6 @@ import Accordion from "./Accordion.vue"
 	opacity: 0;
 }
 
-.galery-content {
-
-}
-
 /* Sobre nosotros*/
 #uno{
 	width: 130%;
@@ -223,6 +219,10 @@ import Accordion from "./Accordion.vue"
 
 	.intro {
 		bottom: -270px;
+	}
+
+  .founder-container {
+		grid-template-columns: 1fr;
 	}
 }
 
