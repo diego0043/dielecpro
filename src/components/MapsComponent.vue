@@ -1,7 +1,7 @@
-<template>
+<template >
   <img
     class="img-map shadow-lg"
-    src="https://www.google.com/maps/d/thumbnail?mid=1Qhv0NwTq7ybxNJj0xy2rGwf1ku0&hl=en_US"
+    src="../assets/footer/imgDirection.png"
     alt=""
   />
 </template>
@@ -13,5 +13,5 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } 
 </style>

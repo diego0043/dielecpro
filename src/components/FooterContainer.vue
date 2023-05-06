@@ -37,7 +37,9 @@
                 d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
               />
             </svg>
-            <span class="text-footer-row">Santa Ana, 25 AV sur </span>
+            <span class="text-footer-row">23 Av. Sur entre 9na calle oriente</span>
+            <br>
+            <span class="text-direction"> y calle santa cruz</span>
           </div>
         </div>
         <div class="row row-container-footer">
@@ -57,7 +59,7 @@
                 d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
               />
             </svg>
-            <span class="text-footer-row"> Lunes - Sabado 08:00 AM - 05:00 PM </span>
+            <span class="text-footer-row"> Lunes - Sabado 8:00 AM - 5:00 PM </span>
           </div>
         </div>
         <div class="row row-container-footer">
@@ -75,7 +77,7 @@
                 d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
               />
             </svg>
-            <span class="text-footer-row"> +503 7923 2974 </span>
+            <span class="text-footer-row"> +503 7498 0189 </span>
           </div>
         </div>
         <div class="row">
@@ -84,9 +86,9 @@
       </div>
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
         <div class="col col-container">
-          <div class="container-img">
+          <a href="https://goo.gl/maps/wT275iZwNoXy4X8UA" target="_blank" class="container-img">
             <MapsComponent />
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -202,6 +204,7 @@
     margin-left: auto;
     width: 300px;
     height: 300px;
+    cursor: pointer;
   }
 
   .row-finaly {
@@ -217,5 +220,10 @@
   .logo-footer {
     width: 80px;
     margin-right: 0px;
+  }
+
+  .text-direction{
+    margin-left: 66px;
+
   }
 </style>

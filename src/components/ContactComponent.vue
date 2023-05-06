@@ -14,7 +14,7 @@
     </a>
     <a
       class="container-icon"
-      href="https://api.whatsapp.com/send?phone=50379232974"
+      href="https://api.whatsapp.com/send?phone=50374980189"
       target="_black"
     >
       <img class="icon" src="../assets/footer/Whatsapp.svg" alt="whatsapp" />

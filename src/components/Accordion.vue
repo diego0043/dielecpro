@@ -316,6 +316,7 @@ img {
     margin-inline: auto;
     padding-inline: 1rem;
     color: #fff;
+    margin-top: -45px;
 }
 
 .accordion {
