@@ -71,8 +71,8 @@
     <!--Fila con margin top,bottom y padding bottom de 5-->
     <div
       class="row mt-5 pb-5 mb-5"
-      data-aos="zoom-out-right"
-      data-aos-duration="1500"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
     >
       <!--Div de mision con background-->
       <div class="mision1-bg">
@@ -94,8 +94,8 @@
     <!--Fila con margin top, top y padding bottom de 5-->
     <div
       class="row mt-5 pb-5 mb-5"
-      data-aos="zoom-out-left"
-      data-aos-duration="1800"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
     >
       <!--Div de vision con background-->
       <div class="vision1-bg">
