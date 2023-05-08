@@ -1,7 +1,7 @@
 <template>
   <!--Contenedor principal con paddind top de 2-->
   <div
-    data-aos="zoom-out-up"
+    data-aos="zoom-in"
     data-aos-duration="2000"
     data-aos-offset="300"
     class="container pt-2"
@@ -67,15 +67,12 @@
     </div>
   </div>
   <!--Contenedor de secciones de Mision y Vision para vista movil y tableta grande-->
-  <div class="misionvision-uno">
-    <!--Fila con margin top,bottom y padding bottom de 5-->
-    <div
-      class="row mt-5 pb-5 mb-5"
-      data-aos="zoom-in"
-      data-aos-duration="2000"
-    >
+  <div class="misionvision-uno ">
       <!--Div de mision con background-->
-      <div class="mision1-bg">
+      <div
+        class="mision1-bg mt-5 pb-5 mb-5"
+        data-aos="zoom-in"
+        data-aos-duration="2000">
         <!--Descripcion de la mision-->
         <div class="mision1">
           <h4 class="mision1-title">MISION</h4>
@@ -90,15 +87,12 @@
           </p>
         </div>
       </div>
-    </div>
-    <!--Fila con margin top, top y padding bottom de 5-->
-    <div
-      class="row mt-5 pb-5 mb-5"
-      data-aos="zoom-in"
-      data-aos-duration="2000"
-    >
+
       <!--Div de vision con background-->
-      <div class="vision1-bg">
+      <div
+        class="vision1-bg mt-5 pb-5 mb-5"
+        data-aos="zoom-in"
+        data-aos-duration="2000">
         <!--Descripcion de la vision-->
         <div class="vision1">
           <h4 class="vision1-title">VISION</h4>
@@ -113,7 +107,7 @@
           </p>
         </div>
       </div>
-    </div>
+    
   </div>
   <!--Contenedor de seccion Mision para vista PC-->
   <div data-aos="fade-right" data-aos-duration="1700" class="mision-dos mt-4">
@@ -377,7 +371,7 @@
     }
 
     .contenedor {
-      margin: 0 10px;
+      margin: 0 -10px;
     }
   }
 
