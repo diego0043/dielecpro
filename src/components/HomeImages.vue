@@ -18,6 +18,9 @@
   import { Carousel, Slide } from "vue3-carousel";
 
   import "vue3-carousel/dist/carousel.css";
+  import img1 from "../assets/home/32970526739.png";
+  import img2 from "../assets/home/06v6ZeCY5aW0xl1jQFSwF-transformed-transformed.jpeg";
+  import img3 from "../assets/home/OjSLcv7TAFVioIt99RfX5-transformed--HO-iaCY-L-transformed.jpeg";
 
   export default defineComponent({
     name: "Autoplay",
@@ -28,11 +31,7 @@
 
     data() {
       return {
-        images: [
-          "https://img.freepik.com/foto-gratis/sirva-tecnico-electrico-que-trabaja-centralita-fusibles_169016-24062.jpg?w=2000",
-          "https://img.freepik.com/fotos-premium/dos-electricistas-asiaticos-estacion-sistema-electrico-inspeccion-servicio-sitio_10541-5345.jpg?w=2000",
-          "https://i0.wp.com/ausinet.com.au/wp-content/uploads/2021/03/Certificate-III-Electrotechnology-Electrician.jpg",
-        ],
+        images: [img1, img2, img3],
       };
     },
   });

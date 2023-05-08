@@ -28,7 +28,7 @@
     </a>
     <a
       class="container-icon"
-      href="https://www.facebook.com/dielecpro/"
+      href="https://www.linkedin.com/in/jaime-navas-33778963/"
       target="_black"
     >
       <img class="icon" src="../assets/footer/Linkedin.svg" alt="linkedin" />

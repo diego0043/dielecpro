@@ -14,9 +14,9 @@
   <HomeImages id="home" />
   <SocialNetworkMovil />
   <SocialNetwork />
-  <AboutUs id="about" />
-  <Services id="services" />
-  <Projects id="projects" />
+  <AboutUs />
+  <Services />
+  <Projects />
   <FooterContainer id="contact" />
 </template>
 

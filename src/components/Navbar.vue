@@ -2,12 +2,13 @@
   import { ref } from "vue";
   const refHome = ref(null);
   const refAbout = ref(null);
+  const refFundador = ref(null);
   const refServices = ref(null);
   const refProjects = ref(null);
   const refContact = ref(null);
 
   const showRef = (refBtn) => {
-    const refBtns = [refHome, refAbout, refServices, refProjects, refContact];
+    const refBtns = [refHome, refAbout, refFundador, refServices, refProjects, refContact];
     refBtns.forEach((refBtn) => {
       if (refBtn.value.classList.contains("default-nav-link")) {
         refBtn.value.classList.remove("default-nav-link");
@@ -70,6 +71,16 @@
               href="#about"
             >
               Sobre nosotros
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              ref="refFundador"
+              @click="showRef(refFundador)"
+              class="nav-link"
+              href="#fundador"
+            >
+              Fundador
             </a>
           </li>
           <li class="nav-item">
@@ -222,7 +233,7 @@
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #000;
+      background-color: var(--color-primary);
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }

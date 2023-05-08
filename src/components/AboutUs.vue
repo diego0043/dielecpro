@@ -5,6 +5,7 @@
     data-aos-duration="2000"
     data-aos-offset="300"
     class="container pt-2"
+    id="about" 
   >
     <!--Fila con padding top de 5 y bottom de 4-->
     <div class="row pt-5 pb-4">
@@ -148,13 +149,14 @@
       </div>
     </div>
   </div>
+  <div class="container-init" id="fundador"></div>
   <div class="container-title">
     <span class="title container-fluid">Fundador</span>
   </div>
 
   <div class="founder-container contenedor container">
     <div class="founder-content">
-      <div class="carta">
+      <div  class="carta">
         <img src="../assets/aboutUs/padreJaime.png" alt="" class="img-card" />
         <div class="intro">
           <h3>Ing. Jaime Navas</h3>
@@ -168,6 +170,7 @@
     </div>
     <Accordion />
   </div>
+  <div id="services"></div>
 </template>
 
 <script setup>
@@ -176,6 +179,7 @@
 
 <style>
   /* Founder styles */
+
 
   .contenedor {
     padding: 60px;
