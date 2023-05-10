@@ -5,7 +5,7 @@
     data-aos-duration="2000"
     data-aos-offset="300"
     class="container pt-2"
-    id="about" 
+    id="about"
   >
     <!--Fila con padding top de 5 y bottom de 4-->
     <div class="row pt-5 pb-4">
@@ -68,47 +68,48 @@
     </div>
   </div>
   <!--Contenedor de secciones de Mision y Vision para vista movil y tableta grande-->
-  <div class="misionvision-uno ">
-      <!--Div de mision con background-->
-      <div
-        class="mision1-bg mt-5 pb-5 mb-5"
-        data-aos="zoom-in"
-        data-aos-duration="2000">
-        <!--Descripcion de la mision-->
-        <div class="mision1">
-          <h4 class="mision1-title">MISION</h4>
-          <p class="mision1-description">
-            Nuestra misión es liderar el mercado ejecutando proyectos de media y
-            baja tensión, así como en el ámbito industrial y comercial a nivel
-            nacional, con soluciones innovadoras y eficientes respaldadas por
-            nuestra experiencia de 10 años. Nos comprometemos con la calidad,
-            cumplimiento de plazos y satisfacción del cliente. Buscamos
-            establecer relaciones duraderas basadas en la confianza, excelencia
-            y ser la opción preferida en el mercado.
-          </p>
-        </div>
+  <div class="misionvision-uno">
+    <!--Div de mision con background-->
+    <div
+      class="mision1-bg mt-5 pb-5 mb-5"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+    >
+      <!--Descripcion de la mision-->
+      <div class="mision1">
+        <h4 class="mision1-title">MISION</h4>
+        <p class="mision1-description">
+          Nuestra misión es liderar el mercado ejecutando proyectos de media y
+          baja tensión, así como en el ámbito industrial y comercial a nivel
+          nacional, con soluciones innovadoras y eficientes respaldadas por
+          nuestra experiencia de 10 años. Nos comprometemos con la calidad,
+          cumplimiento de plazos y satisfacción del cliente. Buscamos establecer
+          relaciones duraderas basadas en la confianza, excelencia y ser la
+          opción preferida en el mercado.
+        </p>
       </div>
+    </div>
 
-      <!--Div de vision con background-->
-      <div
-        class="vision1-bg mt-5 pb-5 mb-5"
-        data-aos="zoom-in"
-        data-aos-duration="2000">
-        <!--Descripcion de la vision-->
-        <div class="vision1">
-          <h4 class="vision1-title">VISION</h4>
-          <p class="vision1-description">
-            Nuestra misión es liderar el mercado ejecutando proyectos de media y
-            baja tensión, así como en el ámbito industrial y comercial a nivel
-            nacional, con soluciones innovadoras y eficientes respaldadas por
-            nuestra experiencia de 10 años. Nos comprometemos con la calidad,
-            cumplimiento de plazos y satisfacción del cliente. Buscamos
-            establecer relaciones duraderas basadas en la confianza, excelencia
-            y ser la opción preferida en el mercado.
-          </p>
-        </div>
+    <!--Div de vision con background-->
+    <div
+      class="vision1-bg mt-5 pb-5 mb-5"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+    >
+      <!--Descripcion de la vision-->
+      <div class="vision1">
+        <h4 class="vision1-title">VISION</h4>
+        <p class="vision1-description">
+          Nuestra misión es liderar el mercado ejecutando proyectos de media y
+          baja tensión, así como en el ámbito industrial y comercial a nivel
+          nacional, con soluciones innovadoras y eficientes respaldadas por
+          nuestra experiencia de 10 años. Nos comprometemos con la calidad,
+          cumplimiento de plazos y satisfacción del cliente. Buscamos establecer
+          relaciones duraderas basadas en la confianza, excelencia y ser la
+          opción preferida en el mercado.
+        </p>
       </div>
-    
+    </div>
   </div>
   <!--Contenedor de seccion Mision para vista PC-->
   <div data-aos="fade-right" data-aos-duration="1700" class="mision-dos mt-4">
@@ -156,7 +157,7 @@
 
   <div class="founder-container contenedor container">
     <div class="founder-content">
-      <div  class="carta">
+      <div class="carta">
         <img src="../assets/aboutUs/padreJaime.png" alt="" class="img-card" />
         <div class="intro">
           <h3>Ing. Jaime Navas</h3>
@@ -170,7 +171,7 @@
     </div>
     <Accordion />
   </div>
-  <div id="services"></div>
+  <div class="services" id="services"></div>
 </template>
 
 <script setup>
@@ -180,100 +181,194 @@
 <style>
   /* Founder styles */
 
+  @media screen and (max-width: 768px) {
 
-  .contenedor {
-    padding: 60px;
+    .title {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      font-size: 35px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: gray;
+    }
+    .founder-container {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .founder-content {
+      display: block;
+      margin-right: auto;
+      margin-left: 4%;
+      width: 90vw;
+    }
+
+    .carta {
+      overflow: hidden;
+      height: 455px;
+      margin: 15px;
+      position: relative;
+      border: 1px solid white;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 0px rgb(199, 198, 198);
+    }
+
+    .carta img {
+      width: 100%;
+      border-radius: 3px;
+      height: 500px;
+      object-fit: cover;
+      transition: 0.5s ease-out;
+    }
+
+    .carta:hover {
+      cursor: pointer;
+      border: 1px solid rgb(199, 198, 198);
+    }
+
+    .carta:hover img {
+      transition: 0.3s ease-out;
+    }
+
+    .carta:hover .intro {
+      background-color: rgba(0, 0, 0, 0.568);
+      bottom: 0;
+    }
+
+    .carta:hover p {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .intro {
+      /* height: 200px; */
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: -260px;
+      color: #fff;
+      background: rgb(27, 27, 27, 0.5);
+      transition: 0.5s;
+    }
+
+    .intro h3 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 10px;
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      width: 100%;
+      margin-left: -3px;
+    }
+
+    .intro p {
+      margin: 35px;
+      font-size: 17px;
+      visibility: hidden;
+      opacity: 0;
+      text-align: left;
+    }
   }
 
-  .container-title {
-    position: relative;
-    height: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
+  @media screen and (min-width: 768px) {
+    .contenedor {
+      padding: 60px;
+    }
+    .container-title {
+      position: relative;
+      height: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
 
-  .title {
-    position: absolute;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 35px;
-    text-align: center;
-    bottom: -50px;
-  }
+    .title {
+      position: absolute;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      font-size: 35px;
+      text-align: center;
+      bottom: -50px;
+    }
 
-  .founder-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 1.5rem;
-  }
+    .founder-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 1.5rem;
+    }
 
-  .carta {
-    box-shadow: none;
-    overflow: hidden;
-    height: 455px;
-    margin: 15px;
-    position: relative;
-    border: 1px solid white;
-    border-radius: 20px;
-  }
+    .carta {
+      box-shadow: none;
+      overflow: hidden;
+      height: 455px;
+      margin: 15px;
+      position: relative;
+      border: 1px solid white;
+      border-radius: 20px;
+    }
 
-  .carta img {
-    width: 100%;
-    border-radius: 3px;
-    height: 500px;
-    object-fit: cover;
-    transition: 0.5s ease-out;
-  }
+    .carta img {
+      width: 100%;
+      border-radius: 3px;
+      height: 500px;
+      object-fit: cover;
+      transition: 0.5s ease-out;
+    }
 
-  .carta:hover {
-    cursor: pointer;
-    border: 1px solid rgb(199, 198, 198);
-    box-shadow: 0px 0px 10px 0px rgb(199, 198, 198);
-  }
+    .carta:hover {
+      cursor: pointer;
+      border: 1px solid rgb(199, 198, 198);
+      box-shadow: 0px 0px 10px 0px rgb(199, 198, 198);
+    }
 
-  .carta:hover img {
-    transform: scale(1) rotate(0deg);
-    transition: 0.3s ease-out;
-  }
+    .carta:hover img {
+      transform: scale(1) rotate(0deg);
+      transition: 0.3s ease-out;
+    }
 
-  .carta:hover .intro {
-    background-color: rgba(0, 0, 0, 0.568);
-    bottom: 0;
-  }
+    .carta:hover .intro {
+      background-color: rgba(0, 0, 0, 0.568);
+      bottom: 0;
+    }
 
-  .carta:hover p {
-    visibility: visible;
-    opacity: 1;
-  }
+    .carta:hover p {
+      visibility: visible;
+      opacity: 1;
+    }
 
-  .intro {
-    /* height: 200px; */
-    width: 100%;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: -260px;
-    color: #fff;
-    background: rgb(27, 27, 27, 0.5);
-    transition: 0.5s;
-  }
+    .intro {
+      /* height: 200px; */
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: -260px;
+      color: #fff;
+      background: rgb(27, 27, 27, 0.5);
+      transition: 0.5s;
+    }
 
-  .intro h3 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    width: 100%;
-  }
+    .intro h3 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 10px;
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      width: 100%;
+    }
 
-  .intro p {
-	margin: 35px;
-    font-size: 17px;
-    visibility: hidden;
-    opacity: 0;
-	text-align: left;
+    .intro p {
+      margin: 35px;
+      font-size: 17px;
+      visibility: hidden;
+      opacity: 0;
+      text-align: left;
+    }
   }
 
   /* Estilos para la sección "Sobre nosotros" */
